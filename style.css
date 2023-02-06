@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: tahoma;
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  background-color: #222;
+  padding: 20px;
+}
+
+ul.filters label,
+input {
+  display: block;
+}
+
+div.img {
+  flex-basis: 70%;
+}
+
+div.img button {
+  display: block;
+  position: relative;
+  left: 30%;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: white dashed 1px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+
+div.img img {
+  width: 100%;
+  height: 65vh;
+  display: none;
+}
+
+canvas img {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  width: 100%;
+}
+
+ul.filters {
+  flex-basis: 30%;
+}
+
+ul,
+input {
+  width: 100%;
+  padding: 0 20px;
+}
+
+div.buttons {
+  justify-content: space-around;
+  margin-top: 40px;
+  display: none;
+}
+
+div.buttons button {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+@media screen and (max-width: 678px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.img {
+    margin-bottom: 30px;
+    position: relative;
+  }
+}
+
+label {
+  color: white;
+  line-height: 40px;
+}

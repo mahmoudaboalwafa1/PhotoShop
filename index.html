@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoShop</title>
+    <link
+      rel="shortcut icon"
+      href="./image/photoshop.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img />
+        <canvas width="400" height="400"></canvas>
+        <input type="file" accept="image/*" />
+        <button class="upload">Upload</button>
+      </div>
+      <ul class="fliters">
+        <label for="saturate">saturate</label>
+        <input id="saturate" type="range" min="0" max="200" value="100" />
+        <label for="contrast">contrast</label>
+        <input id="contrast" type="range" min="0" max="200" value="100" />
+        <label for="brightness">Brightness</label>
+        <input id="brightness" type="range" min="0" max="200" value="100" />
+        <label for="sepa">Sepa</label>
+        <input id="sepa" type="range" min="0" max="200" value="0" />
+        <label for="gray-scale">Grayscale</label>
+        <input
+          id="gray-scale"
+          type="range"
+          step="0.1"
+          min="0"
+          max="1"
+          value="0"
+        />
+        <label for="blur">Blur</label>
+        <input id="blur" type="range" step="0.1" min="0" max="10" value="0" />
+        <label for="hue-rotate">Hue Rotate</label>
+        <input id="hue-rotate" type="range" min="0" max="350" value="0" />
+        <div class="buttons">
+          <button><a download="img" class="download">Download</a></button>
+          <button class="reset">Reset</button>
+        </div>
+      </ul>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
